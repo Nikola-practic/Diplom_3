@@ -21,8 +21,6 @@ class TestOrdersFeed:
         # Клик на кнопку "Личный кабинет" в правом верхнем углу главной страницы
         home_page.click_lk_button()
 
-        # order_feed_page = LoginPageBurger(driver)
-
         # Ввод email в качестве логина пользователя на странице авторизации
         order_feed_page.input_email()
 
@@ -69,8 +67,6 @@ class TestOrdersFeed:
 
         # Клик на кнопку "Личный кабинет" в правом верхнем углу главной страницы
         home_page.click_lk_button()
-
-        # login_page = LoginPageBurger(driver)
 
         # Ввод email в качестве логина пользователя на странице авторизации
         order_feed_page.input_email()
@@ -142,7 +138,4 @@ class TestOrdersFeed:
 
         # Проверка, что после оформления заказа его номер появляется в разделе "В работе"
         assert order_feed_page.get_number_of_order_in_work() == order_num
-
-
-
 
